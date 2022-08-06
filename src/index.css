@@ -13,11 +13,15 @@ code {
 }
 
 .side-menu-margin {
+  margin-left: 80px;
+}
+
+.side-menu-margin-extended {
   margin-left: 280px;
 }
 
 @media (max-width: 1000px){
-  .side-menu-margin {
+  .side-menu-margin-extended {
     margin: 0;
   }
 

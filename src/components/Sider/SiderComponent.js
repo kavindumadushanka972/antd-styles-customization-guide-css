@@ -1,15 +1,21 @@
 import React, { useState } from 'react'
 import { Layout } from 'antd';
 import MenuComponent from '../Menu/MenuComponent';
+import { useSelector, useDispatch } from "react-redux";
+import { change } from '../../Redux/SidemenuMargin';
 
 function SiderComponent() {
     const { Sider } = Layout;
-    const [collapsed, setCollapsed] = useState(false);
+    const { margin } = useSelector((state) => state.margin);
+    const dispatch = useDispatch();
+    console.log(margin)
 
     return (
         // side menu including menu
         <Sider 
-            collapsed={collapsed}
+            collapsible
+            collapsed={margin}
+            onCollapse={() => dispatch(change())}
             width={280}
             style={{
                 overflow: 'auto',
