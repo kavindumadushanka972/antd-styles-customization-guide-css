@@ -33,7 +33,7 @@ function Layoutview() {
       <Layout>
             <Header />
 
-            <Content style={{minHeight: '100vh', background: '#090b17'}}>
+            <Content style={{minHeight: '100vh'}}>
               <div className='container-fluid mt-4'>
                 <Pages />
               </div>

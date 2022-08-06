@@ -5,12 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Store } from './Redux/Store'
 import { Provider } from "react-redux";
+import { ThemeSwitcherProvider } from "react-css-theme-switcher";
+
+const themes = {
+  dark: `${process.env.PUBLIC_URL}/dark-theme.css`,
+  light: `${process.env.PUBLIC_URL}/light-theme.css`,
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={Store}>
-      <App />
+      <ThemeSwitcherProvider themeMap={themes} defaultTheme="light">
+        <App />
+      </ThemeSwitcherProvider>
     </Provider>
   </React.StrictMode>
 );

@@ -63,9 +63,8 @@ function MenuComponent() {
       <Menu
         mode="inline"
         defaultSelectedKeys={['home']}
-        theme="light"
+        theme="dark"
         onClick={onClick}
-        style={{ background: '#15161b' }}
         items={items}
       />
     </>
