@@ -1,11 +1,10 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Menu } from 'antd';
+import { AppstoreFilled, RocketFilled } from '@ant-design/icons'
 import './MenuComponent.css'
 
 // menu item icons
-import home from '../../images/home.png'
-import bsc from '../../images/bsc.png'
 import rugfree from '../../images/rugfree.png'
 
 // submenu icons
@@ -28,8 +27,8 @@ function MenuComponent() {
 
   // menu items
   const items = [
-    getItem('Home', 'home', <img src={home} alt="home" style={{width: '20px'}} />),
-    getItem('BSC', 'bsc', <img src={bsc} alt="bsc" style={{width: '20px'}} />, [
+    getItem('Home', 'home', <AppstoreFilled />),
+    getItem('BSC', 'bsc', <RocketFilled />, [
         getItem('Live Pair Explorer', 'lpe', <Codesandbox size={12} />),
         getItem('Rug Scanner', 'rs', <Cpu size={12} />),
         getItem('Liquidity Checker', 'lc', <Database size={12} />),
@@ -47,18 +46,17 @@ function MenuComponent() {
   return (
     <>
       {/* main logo section */}
-      <div style={{marginTop: '30px', marginLeft: '10px'}} >
+      <div style={{marginTop: '30px', marginLeft: '10px', marginBottom: '20px'}} >
         <img alt='main-logo' src={rugfree} style={{ width: '40px', marginTop: '-5px', marginLeft: '20px' }} />
-        <span className='main-title'>RUGFREEcoins</span>
       </div>
       
       {/* menu section */}
       <Menu
         mode="inline"
         defaultSelectedKeys={['home']}
-        theme="dark"
+        theme="light"
         onClick={onClick}
-        style={{ marginTop: '30px', width: '250px', background: '#0c0d20' }}
+        style={{ background: '#15161b' }}
         items={items}
       />
     </>

@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Layout } from 'antd';
 import MenuComponent from '../Menu/MenuComponent';
 
 function SiderComponent() {
     const { Sider } = Layout;
+    const [collapsed, setCollapsed] = useState(false);
 
     return (
         // side menu including menu
         <Sider 
+            collapsed={collapsed}
             width={280}
             style={{
                 overflow: 'auto',
@@ -16,7 +18,7 @@ function SiderComponent() {
                 left: 0,
                 top: 0,
                 bottom: 0,
-                background: '#0c0d20'
+                background: '#15161b'
             }}
         >
             <MenuComponent />

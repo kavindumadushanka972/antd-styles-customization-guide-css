@@ -1,9 +1,9 @@
 .bg-blue {
-    background: #151d31;
+    background: #15161b;
     z-index: 1 !important; /* this line added to show side menu drawer fully */
 }
   
 .ant-drawer-body {
-  background-color: #0c0d20;
+  background-color: #15161b;
   color: #fff;
 }

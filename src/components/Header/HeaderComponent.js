@@ -26,7 +26,7 @@ function Header() {
       </Row>
 
       <Drawer placement="left" onClose={closeDrawer} visible={showMobileMenu} closable={false} width="280px">
-          <div style={{marginLeft: '-20px'}}>
+          <div>
             <MenuComponent />
           </div>
       </Drawer>

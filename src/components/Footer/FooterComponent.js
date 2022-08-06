@@ -9,7 +9,7 @@ function FooterComponent() {
   const { Footer } = Layout
 
   return (
-    <Footer className='text-center' style={{background: '#0c0d20'}}>
+    <Footer className='text-center' style={{background: '#15161b'}}>
       <img src={rugfree} alt="footer_logo" /><br /><br />
       <span>COPYRIGHT © 2022 Developed By <a href="https://www.rugfreecoins.com" target="_blank" rel="noreferrer">Rugfreecoins</a> All rights Reserved</span>
     </Footer>
