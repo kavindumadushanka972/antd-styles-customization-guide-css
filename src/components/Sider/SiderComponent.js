@@ -8,13 +8,12 @@ function SiderComponent() {
     const { Sider } = Layout;
     const { margin } = useSelector((state) => state.margin);
     const dispatch = useDispatch();
-    console.log(margin)
 
     return (
         // side menu including menu
         <Sider 
             collapsible
-            collapsed={margin}
+            collapsed={!margin}
             onCollapse={() => dispatch(change())}
             width={280}
             style={{

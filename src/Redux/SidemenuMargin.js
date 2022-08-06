@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  margin: false
+  margin: true
 };
 
 export const marginSlice = createSlice({

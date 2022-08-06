@@ -2,7 +2,7 @@ import React from 'react'
 import { Layout } from 'antd'
 
 // footer logo
-import rugfree from '../../images/rugfree.png'
+import logo from '../../images/logo.png'
 
 function FooterComponent() {
 
@@ -10,8 +10,8 @@ function FooterComponent() {
 
   return (
     <Footer className='text-center' style={{background: '#15161b'}}>
-      <img src={rugfree} alt="footer_logo" /><br /><br />
-      <span>COPYRIGHT © 2022 Developed By <a href="https://www.rugfreecoins.com" target="_blank" rel="noreferrer">Rugfreecoins</a> All rights Reserved</span>
+      <img src={logo} alt="footer_logo" style={{width: '70px'}} /><br /><br />
+      <span>COPYRIGHT © {new Date().getFullYear()} Developed By <a href="https://github.com/kavindumadushanka972" target="_blank" rel="noreferrer">Kavindu Madushanka</a>.</span>
     </Footer>
   )
 }

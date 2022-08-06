@@ -3,9 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { Menu } from 'antd';
 import { AppstoreFilled, RocketFilled } from '@ant-design/icons'
 import './MenuComponent.css'
+import { useSelector } from "react-redux";
 
 // menu item icons
-import rugfree from '../../images/rugfree.png'
+import logo from '../../images/logo.png'
 
 // submenu icons
 import { Codesandbox, Cpu, Database, Code, UserCheck } from 'react-feather'
@@ -13,6 +14,8 @@ import { Codesandbox, Cpu, Database, Code, UserCheck } from 'react-feather'
 function MenuComponent() {
 
   const navigate = useNavigate()
+  const { margin } = useSelector((state) => state.margin);
+  
 
   // menu item structure
   const getItem = (label, key, icon, children, theme) => {
@@ -47,7 +50,13 @@ function MenuComponent() {
     <>
       {/* main logo section */}
       <div style={{marginTop: '30px', marginLeft: '10px', marginBottom: '20px'}} >
-        <img alt='main-logo' src={rugfree} style={{ width: '40px', marginTop: '-5px', marginLeft: '20px' }} />
+        {
+          margin ?
+          <img alt='main-logo' src={logo} style={{ width: '140px', marginTop: '-5px', marginLeft: '55px' }} />
+          :
+          <img alt='main-logo' src={logo} style={{ width: '70px', marginTop: '-5px', marginLeft: '-5px' }} />
+        }
+        
       </div>
       
       {/* menu section */}

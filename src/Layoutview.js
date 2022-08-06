@@ -14,7 +14,7 @@ function Layoutview() {
   const [marginVariable, setMarginVariable] = useState('side-menu-margin-extended')
 
   useEffect(() => {
-    if (!margin) {
+    if (margin) {
       setMarginVariable('side-menu-margin-extended')
     } else {
       setMarginVariable('side-menu-margin')

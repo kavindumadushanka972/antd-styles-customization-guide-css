@@ -25,7 +25,7 @@ function Header() {
         </Col>
       </Row>
 
-      <Drawer placement="left" onClose={closeDrawer} visible={showMobileMenu} closable={false} width="280px">
+      <Drawer placement="left" onClose={closeDrawer} visible={showMobileMenu} closable={false} width="310px">
           <div>
             <MenuComponent />
           </div>
