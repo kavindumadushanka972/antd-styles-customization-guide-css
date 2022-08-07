@@ -49,6 +49,7 @@ export default CardComponent`}
 
             <div className='mt-5'>
                 <h4>CSS Styles</h4>
+                <span className='small fw-bold'>CardComponent.css</span>
 
                 <div className='code-block mt-3'>
                     <CopyBlock
