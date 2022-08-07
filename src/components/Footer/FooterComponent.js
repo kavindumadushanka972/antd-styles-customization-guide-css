@@ -1,17 +1,20 @@
 import React from 'react'
 import { Layout } from 'antd'
-
-// footer logo
-import logo from '../../images/logo.png'
+import { GithubOutlined, MailFilled } from '@ant-design/icons'
+import { useSelector } from "react-redux";
 
 function FooterComponent() {
 
   const { Footer } = Layout
+  const { dark } = useSelector((state) => state.dark);
 
   return (
     <Footer className='text-center'>
-      <img src={logo} alt="footer_logo" style={{width: '70px'}} /><br /><br />
-      <span>COPYRIGHT © {new Date().getFullYear()} Developed By <a href="https://github.com/kavindumadushanka972" target="_blank" rel="noreferrer">Kavindu Madushanka</a>.</span>
+      <span>COPYRIGHT © {new Date().getFullYear()} Developed By Kavindu Hewamanage.</span>
+      <div className='text-center'>
+        <a href="https://github.com/kavindumadushanka972" target="_blank" rel="noreferrer"><GithubOutlined style={{fontSize: '18px', marginRight: '5px', color: dark ? 'white' : 'black'}} /></a>
+        <a href = "mailto: kavindumadushanka972@gmail.com"><MailFilled style={{fontSize: '18px', marginLeft: '5px', color: dark ? 'white' : 'black'}} /></a>
+      </div>
     </Footer>
   )
 }

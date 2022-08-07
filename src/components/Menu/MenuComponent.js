@@ -1,15 +1,12 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Menu } from 'antd';
-import { AppstoreFilled, RocketFilled } from '@ant-design/icons'
+import { AppstoreFilled } from '@ant-design/icons'
 import './MenuComponent.css'
 import { useSelector } from "react-redux";
 
 // menu item icons
 import logo from '../../images/logo.png'
-
-// submenu icons
-import { Codesandbox, Cpu, Database, Code, UserCheck } from 'react-feather'
 
 function MenuComponent() {
 
@@ -30,14 +27,14 @@ function MenuComponent() {
 
   // menu items
   const items = [
-    getItem('Home', 'home', <AppstoreFilled />),
-    getItem('BSC', 'bsc', <RocketFilled />, [
-        getItem('Live Pair Explorer', 'lpe', <Codesandbox size={12} />),
-        getItem('Rug Scanner', 'rs', <Cpu size={12} />),
-        getItem('Liquidity Checker', 'lc', <Database size={12} />),
-        getItem('Transaction Simulator', 'ts', <Code size={12} />),
-        getItem('Mini Audit', 'ma', <UserCheck size={12} />)
-    ]),
+    getItem('Getting Started', '/', <AppstoreFilled />),
+    // getItem('Card', 'card', <RocketFilled />, [
+    //     getItem('Live Pair Explorer', 'lpe', <Codesandbox size={12} />),
+    //     getItem('Rug Scanner', 'rs', <Cpu size={12} />),
+    //     getItem('Liquidity Checker', 'lc', <Database size={12} />),
+    //     getItem('Transaction Simulator', 'ts', <Code size={12} />),
+    //     getItem('Mini Audit', 'ma', <UserCheck size={12} />)
+    // ]),
   ];
 
   // onclick event on a menu item, navigates ti relevant route
@@ -62,7 +59,7 @@ function MenuComponent() {
       {/* menu section */}
       <Menu
         mode="inline"
-        defaultSelectedKeys={['home']}
+        defaultSelectedKeys={['/']}
         theme="dark"
         onClick={onClick}
         items={items}

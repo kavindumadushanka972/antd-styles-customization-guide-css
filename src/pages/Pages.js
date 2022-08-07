@@ -1,11 +1,12 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Dashboard from './Dashboard/Dashboard'
+
+import Start from './Start/Start'
 
 function Pages() {
   return (
     <Routes>
-        <Route path="/" exact element={<Dashboard />} />
+        <Route path="/" exact element={<Start />} />
     </Routes>
   )
 }
