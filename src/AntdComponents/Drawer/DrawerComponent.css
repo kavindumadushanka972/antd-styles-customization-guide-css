@@ -1,0 +1,17 @@
+/* drawer header styles */
+.ant-drawer-header {
+    background-color: #1990ff !important;
+    border-radius: none !important;
+    border-bottom: 1px solid grey !important;
+}
+ 
+/* drawer title styles */
+.ant-drawer-title {
+    color: #fff !important;
+}
+
+/* drawer body styles */
+.ant-drawer-body {
+  background-color: #0f1129 !important;
+  color: #fff !important;
+}

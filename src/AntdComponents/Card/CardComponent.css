@@ -1,0 +1,16 @@
+/* add styles to whole card */
+.ant-card {
+    border: none !important;
+}
+
+/* card header styles */
+.ant-card-head {
+    background: #1990ff !important;
+    border-bottom: 2px solid grey !important;
+}
+
+/* card body styles */
+.ant-card-body {
+    color: white;
+    background: #001429 !important;
+}

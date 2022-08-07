@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Menu } from 'antd';
-import { AppstoreFilled } from '@ant-design/icons'
+import { AppstoreFilled, CreditCardFilled, ContainerFilled } from '@ant-design/icons'
 import './MenuComponent.css'
 import { useSelector } from "react-redux";
 
@@ -28,6 +28,8 @@ function MenuComponent() {
   // menu items
   const items = [
     getItem('Getting Started', '/', <AppstoreFilled />),
+    getItem('Card', '/card', <CreditCardFilled />),
+    getItem('Drawer', '/drawer', <ContainerFilled />),
     // getItem('Card', 'card', <RocketFilled />, [
     //     getItem('Live Pair Explorer', 'lpe', <Codesandbox size={12} />),
     //     getItem('Rug Scanner', 'rs', <Cpu size={12} />),
