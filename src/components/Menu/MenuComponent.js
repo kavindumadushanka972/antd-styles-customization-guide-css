@@ -65,6 +65,7 @@ function MenuComponent() {
         defaultSelectedKeys={['/']}
         theme="dark"
         onClick={onClick}
+        style={{ padding: '10px' }}
         items={items}
       />
     </>
