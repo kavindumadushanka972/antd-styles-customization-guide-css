@@ -1,0 +1,39 @@
+/* styles for seperate menu items */
+.ant-menu-item {
+    height: 50px !important;
+    border-radius: 5px;
+    margin-left: 0px !important;
+    font-weight: 500;
+    animation-duration: 0.5s;
+}
+
+/* styles when hover on menu items */
+.ant-menu-item:hover {
+    animation-name: slide-menu-item;
+    animation-timing-function: ease;
+}
+
+/* selected items styles */
+.ant-menu-item-selected {
+    background: #1990fe !important;
+    box-shadow: 0 4px 8px 0 rgba(56, 60, 174, 0.5), 0 6px 20px 0 rgba(56, 60, 174, 0.5);
+}
+
+/* add styles for all submenu items */
+.ant-menu-submenu {
+    margin-left: 0px !important;
+}
+
+/* antd expanded submenu background color */
+.ant-menu-submenu > .ant-menu {
+  background-color: #393c70 !important;
+}
+
+/* add styles for each submenu items title */
+.ant-menu-submenu-title {
+    font-weight: 500;
+}
+
+@keyframes slide-menu-item {
+    50%  { transform: translateX(5px); }
+}

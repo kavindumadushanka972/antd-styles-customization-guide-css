@@ -9,7 +9,7 @@ function Start() {
   const { dark } = useSelector((state) => state.dark);
 
   return (
-    <div className='container'>
+    <div className='container mb-5'>
       <h2>Getting Started 👨🏻‍💻</h2>
       <a href="https://ant.design" target="_blank" rel="noreferrer">👉 Ant Design Page</a>
       <hr />
