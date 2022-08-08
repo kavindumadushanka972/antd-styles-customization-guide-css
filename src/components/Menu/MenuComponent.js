@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Menu } from 'antd';
-import { AppstoreFilled, CreditCardFilled, ContainerFilled, MenuUnfoldOutlined } from '@ant-design/icons'
+import { AppstoreFilled, CreditCardFilled, ContainerFilled, MenuUnfoldOutlined, FormOutlined } from '@ant-design/icons'
 import './MenuComponent.css'
 import { useSelector } from "react-redux";
 
@@ -31,6 +31,7 @@ function MenuComponent() {
     getItem('Card', '/card', <CreditCardFilled />),
     getItem('Drawer', '/drawer', <ContainerFilled />),
     getItem('Side Menu', '/sidemenu', <MenuUnfoldOutlined />),
+    getItem('Forms', '/forms', <FormOutlined />),
     // getItem('Card', 'card', <RocketFilled />, [
     //     getItem('Live Pair Explorer', 'lpe', <Codesandbox size={12} />),
     //     getItem('Rug Scanner', 'rs', <Cpu size={12} />),

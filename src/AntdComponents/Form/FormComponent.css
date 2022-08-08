@@ -1,0 +1,24 @@
+
+/* All the below css classes are not from antd. You can choose any classname suits you and apply styles */
+
+/* you can add input field background color using this class */
+.input-background-inside {
+    background: rgb(150, 153, 207) !important; 
+    color: white !important;
+}
+
+/* you can add input area color using this class */
+.input-background-inside input {
+    background: rgba(100, 101, 118) !important; 
+    color: white !important;
+}
+
+/* background styles for form error messages area when submit */
+.input-background-outside {
+    background: rgb(46, 49, 116); 
+}
+
+/* form prefix icons color customization */
+.icon-white {
+    color: blue !important;
+}
