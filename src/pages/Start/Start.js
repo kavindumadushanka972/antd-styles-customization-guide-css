@@ -14,9 +14,11 @@ function Start() {
       <a href="https://ant.design" target="_blank" rel="noreferrer">👉 Ant Design Page</a>
       <hr />
 
-      <p className='small fw-bold'>All thanks to Ant Design developers and contributors for developing this fantastic library. I found it a little bit hard when customizing
-        antd default css styles. So here I am trying to help all the developers like me out there who found it a bit hard.
-        Please provide your suggestions on this. It will help to make this more helpful and reliable to use. Thanks! 😀
+      <p className='small fw-bold'>The creators and collaborators of Ant Design deserve all the credit for creating this 
+      wonderful library. When I tried to customize the antd default css styles, I had a little trouble. So, 
+      here I am attempting to assist all the other developers who, like me, found it a little challenging. 
+      Feel free to offer your recommendations on this. It will contribute to making this more beneficial and trustworthy to 
+      utilize. Thank you! 😀
       </p>
 
       <h4 className='mt-4'>Installation</h4>

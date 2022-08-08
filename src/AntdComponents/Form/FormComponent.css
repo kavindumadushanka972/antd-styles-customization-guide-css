@@ -3,7 +3,7 @@
 
 /* you can add input field background color using this class */
 .input-background-inside {
-    background: rgb(150, 153, 207) !important; 
+    background: #393c70 !important; 
     color: white !important;
 }
 
@@ -15,10 +15,10 @@
 
 /* background styles for form error messages area when submit */
 .input-background-outside {
-    background: rgb(46, 49, 116); 
+    background: rgb(150, 153, 207); 
 }
 
 /* form prefix icons color customization */
 .icon-white {
-    color: blue !important;
+    color: white !important;
 }

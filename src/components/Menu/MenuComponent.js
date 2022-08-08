@@ -1,7 +1,14 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Menu } from 'antd';
-import { AppstoreFilled, CreditCardFilled, ContainerFilled, MenuUnfoldOutlined, FormOutlined } from '@ant-design/icons'
+import { 
+  AppstoreFilled, 
+  CreditCardFilled, 
+  ContainerFilled, 
+  MenuUnfoldOutlined, 
+  FormOutlined,
+  BgColorsOutlined 
+} from '@ant-design/icons'
 import './MenuComponent.css'
 import { useSelector } from "react-redux";
 
@@ -28,6 +35,7 @@ function MenuComponent() {
   // menu items
   const items = [
     getItem('Getting Started', '/', <AppstoreFilled />),
+    getItem('Theme', '/theme', <BgColorsOutlined />),
     getItem('Card', '/card', <CreditCardFilled />),
     getItem('Drawer', '/drawer', <ContainerFilled />),
     getItem('Side Menu', '/sidemenu', <MenuUnfoldOutlined />),
