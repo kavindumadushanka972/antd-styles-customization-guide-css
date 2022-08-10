@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu } from 'antd';
 import { 
   AppstoreFilled, 
@@ -18,6 +18,7 @@ import logo from '../../images/logo.png'
 function MenuComponent() {
 
   const navigate = useNavigate()
+  const location = useLocation()
   const { margin } = useSelector((state) => state.margin);
   
 
@@ -71,7 +72,7 @@ function MenuComponent() {
       {/* menu section */}
       <Menu
         mode="inline"
-        defaultSelectedKeys={['/']}
+        selectedKeys={location.pathname}
         theme="dark"
         onClick={onClick}
         style={{ padding: '10px' }}
