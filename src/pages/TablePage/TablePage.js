@@ -12,7 +12,7 @@ function TablePage() {
 
     return (
         <div className='container mb-5'>
-            <h2>Tables Styles Customization 🪪</h2>
+            <h2>Tables Styles Customization 🧾</h2>
             <a href="https://ant.design/components/table/" target="_blank" rel="noreferrer">👉 Ant Design Tables</a>
             <hr />
 

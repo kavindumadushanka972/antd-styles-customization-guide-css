@@ -11,7 +11,7 @@ function SwitchPage() {
 
     return (
         <div className='container mb-5'>
-            <h2>Switch Styles Customization 🪪</h2>
+            <h2>Switch Styles Customization 🎛</h2>
             <a href="https://ant.design/components/switch/" target="_blank" rel="noreferrer">👉 Ant Design Switch</a>
             <hr />
 

@@ -11,7 +11,7 @@ function StepsPage() {
 
     return (
         <div className='container mb-5'>
-            <h2>Steps Styles Customization 📑</h2>
+            <h2>Steps Styles Customization 🪜</h2>
             <a href="https://ant.design/components/steps/" target="_blank" rel="noreferrer">👉 Ant Design Steps</a>
             <hr />
 

@@ -11,7 +11,7 @@ function CountdownPage() {
 
     return (
         <div className='container mb-5'>
-            <h2>Card Styles Customization 🪪</h2>
+            <h2>Countdown Styles Customization ⏱</h2>
             <a href="https://ant.design/components/card/" target="_blank" rel="noreferrer">👉 Ant Design Card</a>
             <hr />
 

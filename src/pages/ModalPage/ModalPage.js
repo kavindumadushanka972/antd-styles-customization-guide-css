@@ -11,7 +11,7 @@ function ModalPage() {
 
     return (
         <div className='container mb-5'>
-            <h2>Modal Styles Customization 📥</h2>
+            <h2>Modal Styles Customization 🚪</h2>
             <a href="https://ant.design/components/modal/" target="_blank" rel="noreferrer">👉 Ant Design Modal</a>
             <hr />
 
