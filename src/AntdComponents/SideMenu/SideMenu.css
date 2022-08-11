@@ -26,7 +26,7 @@
 
 /* antd expanded submenu background color */
 .ant-menu-submenu > .ant-menu {
-  background-color: #393c70 !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* add styles for each submenu items title */

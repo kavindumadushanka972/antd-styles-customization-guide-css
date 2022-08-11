@@ -7,8 +7,11 @@ import {
   ContainerFilled, 
   MenuUnfoldOutlined, 
   FormOutlined,
-  BgColorsOutlined 
+  BgColorsOutlined,
+  CreditCardOutlined,
+  ForwardOutlined,
 } from '@ant-design/icons'
+import { ToggleRight, Gift, Table, Clock } from 'react-feather';
 import './MenuComponent.css'
 import { useSelector } from "react-redux";
 
@@ -37,16 +40,19 @@ function MenuComponent() {
   const items = [
     getItem('Getting Started', '/', <AppstoreFilled />),
     getItem('Theme', '/theme', <BgColorsOutlined />),
+    getItem('Theme Switcher', '/theme-switch', <Gift size={15} />),
     getItem('Card', '/card', <CreditCardFilled />),
     getItem('Drawer', '/drawer', <ContainerFilled />),
     getItem('Side Menu', '/sidemenu', <MenuUnfoldOutlined />),
     getItem('Forms', '/forms', <FormOutlined />),
-    // getItem('Card', 'card', <RocketFilled />, [
-    //     getItem('Live Pair Explorer', 'lpe', <Codesandbox size={12} />),
-    //     getItem('Rug Scanner', 'rs', <Cpu size={12} />),
-    //     getItem('Liquidity Checker', 'lc', <Database size={12} />),
-    //     getItem('Transaction Simulator', 'ts', <Code size={12} />),
-    //     getItem('Mini Audit', 'ma', <UserCheck size={12} />)
+    getItem('Modal', '/modal', <CreditCardOutlined />),
+    getItem('Steps', '/steps', <ForwardOutlined />),
+    getItem('Table', '/table', <Table size={15} />),
+    getItem('Countdown', '/countdown', <Clock size={15} />),
+    getItem('Switch', '/switch', <ToggleRight size={15} />),
+    // getItem('Table', '/table', <Table size={15} />, [
+    //   getItem('Normal Table', '/table', <TableOutlined  />),
+    //   getItem('Expandable Table', '/expandable-table', <DatabaseOutlined />),
     // ]),
   ];
 
@@ -59,7 +65,7 @@ function MenuComponent() {
   return (
     <>
       {/* main logo section */}
-      <div style={{marginTop: '30px', marginLeft: '10px', marginBottom: '20px'}} >
+      <div style={{marginTop: '30px', marginLeft: '10px'}} >
         {
           margin ?
           <img alt='main-logo' src={logo} style={{ width: '140px', marginTop: '-5px', marginLeft: '55px' }} />
@@ -75,7 +81,7 @@ function MenuComponent() {
         selectedKeys={location.pathname}
         theme="dark"
         onClick={onClick}
-        style={{ padding: '10px' }}
+        style={{ padding: '10px', paddingBottom: '70px' }}
         items={items}
       />
     </>

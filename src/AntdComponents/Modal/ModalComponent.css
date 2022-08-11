@@ -1,0 +1,17 @@
+/* Modal Header Styles */
+.ant-modal-header {
+    background-color: #1a6ead !important;
+    border-bottom: 1px solid #001529 !important;
+}
+
+/* Modal body styles */
+.ant-modal-body { 
+    background-color: #0f1129 !important; 
+    color: #fff !important;
+}
+
+/* Modal Footer Styles */
+.ant-modal-footer {
+    background-color: #2a2e61 !important;
+    border-top: 1px solid #001529 !important;
+}

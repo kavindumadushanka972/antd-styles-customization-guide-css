@@ -1,0 +1,45 @@
+/* Title color in process */
+.ant-steps-item-process .ant-steps-item-title {
+    color: #1990fe !important;
+}
+
+/* In process description color */
+.ant-steps-item-process .ant-steps-item-description {
+    color: #1990fe !important;
+}
+
+/* Title color finished */
+.ant-steps-item-finish .ant-steps-item-title {
+    color: #393c70 !important;
+}
+
+/* Description color finished */
+.ant-steps-item-finish .ant-steps-item-description {
+    color: #393c70 !important;
+}
+
+/* Title color waiting */
+.ant-steps-item-wait .ant-steps-item-title {
+    color: grey !important;
+}
+
+/* Discription color waiting */
+.ant-steps-item-wait .ant-steps-item-description {
+    color: grey !important;
+}
+
+/* Finished circle background color */
+.ant-steps-item-finish .ant-steps-item-icon {
+    background: #393c70 !important;
+}
+
+
+/* Connector color change */
+.ant-steps-item-title:after {
+    background-color: #1990fe !important;
+}
+
+/* In process circle background color */
+.ant-steps-item-process .ant-steps-item-icon { 
+    background: #1990fe !important;
+}

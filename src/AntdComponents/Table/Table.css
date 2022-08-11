@@ -1,0 +1,25 @@
+/* table header styles */
+.ant-table-thead > tr >th{
+    background: #3071b9 !important;
+}
+
+/* table rows styles */
+.ant-table-tbody > tr{
+    color: grey;
+    background: #0f1129 !important;
+}
+
+/* table rows hover styles */
+.ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row)>td, 
+.ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row)>td, 
+.ant-table-thead>tr:hover:not(.ant-table-expanded-row)>td, 
+.ant-table-tbody>tr:hover:not(.ant-table-expanded-row)>td {
+    background: rgb(20, 22, 112) !important;
+}
+
+/* custom class for exapandable area */
+.customExpandArea {
+    background: #0f1129;
+    margin: -17px;
+    border-bottom: solid 1px white;
+}

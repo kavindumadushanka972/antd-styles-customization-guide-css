@@ -10,6 +10,7 @@
     "antd": "^4.21.0",
     "react": "^18.1.0",
     "react-code-blocks": "^0.0.9-0",
+    "react-countdown": "^2.3.2",
     "react-css-theme-switcher": "^0.3.0",
     "react-data-table-component": "^7.5.2",
     "react-dom": "^18.1.0",
