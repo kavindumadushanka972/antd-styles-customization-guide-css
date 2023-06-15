@@ -217,8 +217,8 @@ import App from "./App";
 import { ThemeSwitcherProvider } from "react-css-theme-switcher";
 
 const themes = {
-    dark: 'path to dark-theme.css file', 
-    light: 'path to light-theme.css file',
+    dark: '${process.env.PUBLIC_URL}/dark-theme.css', 
+    light: '${process.env.PUBLIC_URL}/light-theme.css',
 };
 
 ReactDOM.render(
